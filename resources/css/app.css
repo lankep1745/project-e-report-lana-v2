@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+
+@theme {
+    --font-heading: 'Fredoka', cursive, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+    --color-cream: #FFFDF7;
+    --color-electric-purple: #8B5CF6;
+    --color-electric-purple-dark: #7C3AED;
+    --color-bright-yellow: #FACC15;
+    --color-bright-yellow-hover: #EAB308;
+    
+    --color-status-pending: #FB7185;
+    --color-status-processing: #38BDF8;
+    --color-status-completed: #34D399;
+}
+
+/* Playful Neo-Brutalist Dots & Utilities */
+.bg-playful-dots {
+    background-color: #FFFDF7;
+    background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+}
+
+.neo-shadow {
+    box-shadow: 4px 4px 0px 0px rgba(15, 23, 42, 1);
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neo-shadow:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px rgba(15, 23, 42, 1);
+}
+
+.neo-shadow:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px rgba(15, 23, 42, 1);
+}
+
+.neo-shadow-static {
+    box-shadow: 4px 4px 0px 0px rgba(15, 23, 42, 1);
+}
+
+.neo-shadow-sm {
+    box-shadow: 2px 2px 0px 0px rgba(15, 23, 42, 1);
+}
+
+.neo-shadow-lg {
+    box-shadow: 6px 6px 0px 0px rgba(15, 23, 42, 1);
+}
+
+.font-heading {
+    font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
